@@ -1,0 +1,29 @@
+body{
+    min-height: 100vh;
+    width: 100wv;
+}
+
+/*  SIDEBAR  ------------*/
+
+aside{
+    float: left;
+    width: 25%;
+    max-width: 200px;
+    height: 100vh;
+}
+
+.left_top{
+    background-color:#666;
+    height: 60%;
+}
+
+.left_bottom{
+    background-color: #444;
+    height: 30%;
+}
+
+/*  HEADER ------------------*/
+
+.main_header{
+    
+}
