@@ -24,6 +24,28 @@ aside{
 
 /*  HEADER ------------------*/
 
-.main_header{
+header{
     
+}
+
+.main_header{
+    display: inline-block;
+}
+
+.sub_header{
+    
+}
+
+/* MAIN PRODUCT SECTION --------*/
+
+img{
+    max-height: 70px;
+}
+
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-content:space-around;    
 }
