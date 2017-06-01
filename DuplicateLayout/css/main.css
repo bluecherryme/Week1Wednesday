@@ -1,35 +1,81 @@
 body{
     min-height: 100vh;
     width: 100wv;
+    color: #aaa;
+}
+
+a, svg{
+    color: #aaa;
+    fill: currentcolor;
 }
 
 /*  SIDEBAR  ------------*/
 
+aside li  {
+    display: flex;
+    align-items: center;
+}
+
 aside{
     float: left;
-    width: 25%;
-    max-width: 200px;
+    width: 40%;
+    max-width: 250px;
     height: 100vh;
+    line-height: 2;
+    font-size: 0.9em;
+    font-family: "Open Sans"
 }
 
 .left_top{
-    background-color:#666;
-    height: 60%;
+    background-color:#444;
+    height: 70%;
+    padding-top: 15px;
+    padding-left: 15px;
+    display: flex;
+    
+}
+
+.left_top h4, .left_bottom h4 {
+    padding-left: 18px;
+}
+
+.documents{
+    color: #eee;
 }
 
 .left_bottom{
-    background-color: #444;
+    background-color: #333;
     height: 30%;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.rightIndent {
+    padding-left: 40px;
+}
+
+#first{
+    margin-left: 50px;
+}
+
+#second{
+    margin-left: 27px;
 }
 
 /*  HEADER ------------------*/
 
 header{
-    
+    display: flex;
+    flex-direction: column;
 }
 
-.main_header{
-    display: inline-block;
+.main_header *{
+    display: flex;
+    justify-content: space-between
+}
+
+.search_folder{
+    
 }
 
 .sub_header{
@@ -43,6 +89,7 @@ img{
 }
 
 .products{
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
