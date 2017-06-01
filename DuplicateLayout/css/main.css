@@ -1,12 +1,14 @@
 body{
-    min-height: 100vh;
     width: 100wv;
     color: #aaa;
+    font-family: "Open Sans";
+    display: flex;
 }
 
 a, svg{
     color: #aaa;
     fill: currentcolor;
+    text-decoration: none;
 }
 
 /*  SIDEBAR  ------------*/
@@ -17,13 +19,12 @@ aside li  {
 }
 
 aside{
-    float: left;
-    width: 40%;
-    max-width: 250px;
+    position: fixed;
+    width: 250px;
     height: 100vh;
     line-height: 2;
     font-size: 0.9em;
-    font-family: "Open Sans"
+    background-color: #333;
 }
 
 .left_top{
@@ -62,37 +63,93 @@ aside{
     margin-left: 27px;
 }
 
-/*  HEADER ------------------*/
+/*  HEADERS ------------------*/
 
-header{
+.main_section{
+    margin-left: 250px;
+}
+
+.product_wrapper{
+    background: #eee;
     display: flex;
     flex-direction: column;
 }
 
-.main_header *{
+header{
     display: flex;
-    justify-content: space-between
+    flex-direction: column;
+    width: 100%;    
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.main_header ul{
+    display: flex;
+}
+
+.main_header ul li{
+    padding-left: 20px;
+    padding-bottom: 40px;
 }
 
 .search_folder{
-    
+    padding-right: 20px;
 }
 
-.sub_header{
-    
+.search_folder a{
+    padding-right: 20px;
+}
+
+.sub_header ul{
+    display: flex;
+}
+
+.sub_header ul li{
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 /* MAIN PRODUCT SECTION --------*/
 
+.sortAndView{
+    display:flex;
+    justify-content: space-between
+}
+
+.name{
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.options{
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
 img{
-    max-height: 70px;
+    padding-top: 20px;
+}
+
+.product_wrapper{
+    width: 100%;
+    
 }
 
 .products{
-    height: 100%;
+    background: #eee;
     display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
     justify-content: space-around;
-    align-content:space-around;    
+    padding-bottom: 80px;
 }
